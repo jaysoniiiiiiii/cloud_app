@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+
+{% for task in tasks%}
+<div>
+    <center> Hello  {{task.name}} </center>
+    <div>
+        
+        <p>{{ task.id , task.name, task.email, task.access_key, task.secrete_access_key }}</p>
+        
+    </div>
+</div>
+{% endfor %}
+
+{% endblock%}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+	<section>
+
+
+			<div class="user signupBx">
+				<div class="formBx">
+					<form action="/form_login" method="POST">
+						<h2>SIGN IN</h2>
+						<input type="text" name="name" id="name" placeholder="Name" required>
+						<input type="email" name="email" id="email" placeholder="Email Address" required>
+						<input type="password" name="access_key" id="access_key" placeholder="Access Key" required>
+						<input type="password" name="secrete_access_key" id="secrete_access_key" placeholder="Secrete Access Key" required>
+						<input type="submit" name="" value="Sign In">
+						<p class="signup">Do not have AWS account ?<a href="#" onclick="toggleForm();">Create.</a></p>
+					</form>
+				</div>
+				
+			</div>
+
+	</section>
+	<script type="text/javascript">
+		function toggleForm()
+		{
+			var container = document.querySelector('.container');
+			container.classList.toggle('active')
+		}
+	</script>
+{% endblock%}

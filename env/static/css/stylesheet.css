@@ -1,0 +1,93 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+section
+{
+	/* background: radial-gradient(#ffffff 20%, transparent 21% ,transparent 79%, #ffffff 80%);
+	background-size: 11em 11em; */
+	background-color: #48f8fe;
+	opacity: 1;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+section .user .formBx
+{
+	margin-left: 25%;
+	position: relative;	
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	padding: 40px;
+	box-shadow: 10px 10px 8px;
+}
+section .user .formBx form h2
+{
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	color: #555;
+}
+section  .user .formBx form input
+{
+	position: relative; 
+	width: 100%;
+	padding: 10px;
+	background: #f5f5f5;
+	color: #333;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	margin: 8px 0; 
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300; 
+}
+section .user .formBx form input[type="submit"]
+{
+	max-width: 100px;
+	background: #677eff;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;  
+}
+section .user .formBx form .signup
+{
+	position: relative;
+	margin-top: 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #555;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+
+
+@media(max-width: 991px)
+{
+	section 
+	{
+		max-width: 400px;
+	}
+	section .user .formBx
+	{
+		width: 100%;
+	}
+}
